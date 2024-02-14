@@ -39,10 +39,16 @@ export default {
 <style scoped>
 .conversor {
     padding: 2%;
-    max-width: 100%;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid #c2c2c2;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+    border-radius: 5px;
 }
 
 .conversor input {
@@ -63,5 +69,35 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+    .conversor h2 {
+        font-size: 3.1vw;
+        width: 100%;
+    }
+    #input-name {
+        width: 100%;
+    }
+    .conversor {
+        padding: 2%;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid #c2c2c2;
+        overflow: hidden;
+        gap: 2vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .conversor input {
+        width: 100%;
+        height: 6vw;
+        padding-block: 0;
+        padding-inline: 0;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
 }
 </style>
